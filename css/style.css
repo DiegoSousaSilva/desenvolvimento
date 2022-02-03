@@ -1,7 +1,28 @@
 /* Header */
 
+:root {
+  --white: #fff;
+  /*#23232e*/
+  --primary: #194868;
+  --background: #000014;
+
+  --text: #f7f8fa;
+  --text-active: #b19777;
+  --gray-100: #e6e8eb;
+  --gray-200: #afb2b1;
+  --gray-500: #808080;
+  --gray-800: #494d4d;
+
+  --green-500: #84d361;
+
+  --purple-300: #9f75ff;
+  --purple-400: #9164fa;
+  --purple-500: #8257e5;
+  --purple-800: #6f4bc9;
+}
+
 .header a {
-  color: #fff;
+  color: var(--text);
   text-decoration: none;
   transition: 0.3s;
 }
@@ -15,7 +36,7 @@
   align-items: center;
   justify-content: space-around;
   font-family: system-ui, -apple-system, Arial, Helvetica, sans-serif;
-  background: #23232e;
+  background: var(--background);
   height: 8vh;
 }
 
@@ -40,7 +61,7 @@
 .header .mobile-menu div {
   width: 32px;
   height: 2px;
-  background: #fff;
+  background: var(--text);
   margin: 8px;
   transition: 0.3s;
 }
@@ -73,18 +94,24 @@
 
 /* Main */
 
-.container {
+.principal {
+  background-color: var(--background);
+  flex: 1;
+}
+.center {
   width: 90%;
   margin: 0 auto;
-  background-color: #23232e;
   padding: 20px;
+}
+.container section {
+  margin-top: 30px;
 }
 
 .section-title {
   font-size: 40px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  color: #fff;
+  color: var(--text);
   text-transform: uppercase;
   position: relative;
   letter-spacing: 10px;
@@ -92,7 +119,7 @@
   margin-bottom: 30px;
 }
 .section-title span {
-  color: #b19777;
+  color: var(--text-active);
 }
 section p {
   font-family: "Didact Gothic", sans-serif;
@@ -103,7 +130,7 @@ section p {
   margin-bottom: 20px;
 }
 
-.row {
+.div-row {
   display: flex;
   flex-direction: row;
 }
@@ -116,8 +143,6 @@ section .img {
 img {
   width: 100%;
   height: auto;
-}
-.about-img {
 }
 
 .img-legend {
@@ -148,7 +173,7 @@ img {
     right: 0;
     width: 50vw;
     height: 92vh;
-    background: #23232e;
+    background: var(--background);
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -161,5 +186,11 @@ img {
   }
   .mobile-menu {
     display: block;
+  }
+
+  /* Main */
+
+  .div-row {
+    flex-direction: column;
   }
 }
