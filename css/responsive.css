@@ -1,0 +1,11 @@
+@media (min-width: 992px) {
+  #navbar-top .nav-link {
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #navbar-top .navbar-collapse {
+    width: 100%;
+  }
+}
