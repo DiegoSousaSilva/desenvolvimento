@@ -4,12 +4,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Architeture</title>
-    <!--Styles CSS -->
-    <link rel="stylesheet" href="./css/main.css" />
-
-    <!--Animate CSS -->
-    <link rel="stylesheet" href="./css/animate.min.css" />
 
     <!-- OWL Carousel Min CSS -->
     <link
@@ -29,11 +23,18 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- FONTS -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>Architeture</title>
+
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
       * {
         font-family: "Poppins", sans-serif;
+      }
+      .item-img {
+        height: 280px;
       }
     </style>
   </head>
@@ -41,7 +42,7 @@
     <!--HEADER-->
     <header id="navbar-top" class="sticky-top">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="#">
             <img src="./img/logo.svg" alt="Logo" class="img-fluid" />
           </a>
@@ -62,7 +63,7 @@
           >
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="/"
                   >Inicio</a
                 >
               </li>
@@ -112,106 +113,6 @@
     </div>
     <!--//SLIDER-->
 
-    <main class="container">
-      <!-- About -->
-      <section id="about">
-        <div class="div-row">
-          <div>
-            <h2 class="section-title">Sobre <span>Arquitetura</span></h2>
-            <p>
-              Architecture viverra tristique justo duis vitae diam neque nivamus
-              aestan ateuene artines aringianu atelit finibus viverra nec lacus.
-              Nedana theme erodino setlie suscipe no curabit tristique.
-            </p>
-            <p>
-              Design inilla duiman at elit finibus viverra nec a lacus themo the
-              drudea seneoice misuscipit non sagie the fermen.
-            </p>
-            <p>
-              Planner inilla duiman at elit finibus viverra nec a lacus themo
-              the drudea seneoice misuscipit non sagie the fermen. Viverra
-              tristique jusio the ivite dianne onen nivami acsestion augue
-              artine.
-            </p>
-          </div>
-          <div>
-            <div class="about-img">
-              <div class="img">
-                <img src="./img/about.jpg" class="img-fluid" alt="" />
-              </div>
-              <div class="img-legend">Escritorio de Belem</div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Services -->
-
-      <section>
-        <h2 class="section-title">Nossos <span>Projetos</span></h2>
-        <div class="container-fluid my-5">
-          <div class="row mt-5">
-            <div class="owl-carousel owl-theme">
-              <div class="item mb-4 media-custom">
-                <div class="card border-0 shadow">
-                  <img
-                    src="./img/1(1).jpg"
-                    alt="Serviço 01"
-                    class="card-img-top"
-                  />
-                  <div class="card-body">
-                    <h4>Nulla bibendum</h4>
-                  </div>
-                </div>
-              </div>
-              <!--item end-->
-              <div class="item mb-4 media-custom">
-                <div class="card border-0 shadow">
-                  <img
-                    src="./img/2(1).jpg"
-                    alt="Serviço 01"
-                    class="card-img-top"
-                  />
-                  <div class="card-body">
-                    <h4>Orci varius natoque penatibus</h4>
-                  </div>
-                </div>
-              </div>
-              <!--item end-->
-              <div class="item mb-4 media-custom">
-                <div class="card border-0 shadow">
-                  <img
-                    src="./img/3(1).jpg"
-                    alt="Serviço 01"
-                    class="card-img-top"
-                  />
-                  <div class="card-body">
-                    <h4>Duis at mi lectus</h4>
-                  </div>
-                </div>
-              </div>
-              <!--item end-->
-              <div class="item mb-4 media-custom">
-                <div class="card border-0 shadow">
-                  <img
-                    src="./img/4(1).jpg"
-                    alt="Serviço 01"
-                    class="card-img-top"
-                  />
-                  <div class="card-body">
-                    <h4>Lorem ipsum dolor</h4>
-                  </div>
-                </div>
-              </div>
-              <!--item end-->
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="./js//bootstrap.bundle.min.js"></script>
-
     <!---- Incluir cdn files --->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -219,6 +120,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="

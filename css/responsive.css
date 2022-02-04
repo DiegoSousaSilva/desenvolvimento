@@ -1,11 +1,28 @@
+/* MIN WIDTH */
 @media (min-width: 992px) {
   #navbar-top .nav-link {
     margin: 0 15px;
   }
 }
 
+/* MAX MEDIUM */
 @media (max-width: 991.98px) {
   #navbar-top .navbar-collapse {
     width: 100%;
+  }
+  .nav-item {
+    align-items: center;
+  }
+
+  .div-row {
+    flex-direction: column;
+  }
+
+  .media-custom .card {
+    height: 200px;
+  }
+
+  .slider {
+    margin-top: 0;
   }
 }

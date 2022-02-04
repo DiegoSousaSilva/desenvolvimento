@@ -3,14 +3,15 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+/*=== HEADER ===*/
 #navbar-top {
   width: 100%;
-  background-color: transparent;
-  transition: background ease-out 0.2s;
+  background: transparent;
+  transition: background ease-in 0.5s;
 }
 
 .fixed-top {
-  background-color: #fff !important;
+  background: #fff !important;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
   z-index: 1000;
   transition: transform 0.3s;
@@ -21,8 +22,9 @@ html {
 }
 
 #navbar-top .nav-link {
+  color: var(--text);
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   padding-left: 0;
   padding-right: 0;
 
@@ -30,6 +32,200 @@ html {
 }
 
 #navbar-top .nav-link:hover {
-  border-bottom: solid 4px var(--secondary);
-  color: var(--secondary);
+  border-bottom: solid 4px var(--text-active);
+  color: var(--text-active);
+}
+
+/*=== Slider  ===*/
+.slider {
+  margin-top: -100px;
+}
+
+.slider .item {
+  height: 500px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.slider .slide1 {
+  background-image: url("../img/slide/1.png");
+}
+.slider .slide2 {
+  background-image: url("../img/slide/2.png");
+}
+.slider .slide3 {
+  background-image: url("../img/slide/3.png");
+}
+
+.slider .caption {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+
+.slider .caption .title {
+  background: rgba(255, 255, 255, 0.4);
+  font-size: 60px;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.slider .caption .desc {
+  font-size: 35px;
+  font-weight: 300;
+  margin: 20px 0 10px;
+  color: #fff;
+}
+
+.slider .owl-dots {
+  position: absolute;
+  z-index: 100;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.slider .owl-dots button.owl-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin: 0px 3px;
+  outline: none;
+}
+
+.slider .owl-dots button.owl-dot .active {
+  background: #fff;
+}
+
+.slider .owl-carousel .owl-nav button.owl-prev,
+.slider .owl-carousel .owl-nav button.owl-next {
+  width: 30px;
+  height: 30px;
+  border-bottom: 4px solid #fff;
+  border-left: 4px solid #fff;
+  position: absolute;
+  text-indent: -60px;
+
+  top: 50%;
+
+  overflow: hidden;
+  outline: none;
+  opacity: 0.5;
+  transition: all ease 0.5s;
+}
+
+.slider .owl-carousel .owl-nav button.owl-prev {
+  left: 10px;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.slider .owl-carousel .owl-nav button.owl-next {
+  right: 10px;
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+.slider .owl-carousel:hover .owl-nav button.owl-prev {
+  left: 30px;
+}
+.slider .owl-carousel:hover .owl-nav button.owl-next {
+  right: 30px;
+}
+
+/*=== ABOUT ===*/
+main.container {
+  margin-top: 30px;
+}
+.section-title {
+  font-size: 40px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: var(--text);
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 10px;
+  word-spacing: 5px;
+  margin-bottom: 30px;
+}
+.section-title span {
+  color: var(--text-active);
+}
+section p {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75em;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.div-row {
+  display: flex;
+  flex-direction: row;
+}
+
+section .img {
+  padding: 0 15px 30px 30px;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.img-legend {
+  padding: 20px 15px;
+  color: #272727;
+  /*position: absolute;*/
+  z-index: 3;
+  right: 45px;
+  width: 40% !important;
+  background: #f4f4f4;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  letter-spacing: 5px;
+  font-size: 13px;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+/*=== SERVICES ===*/
+
+.media-custom {
+  background-color: #fff;
+  transition: 0.3s all ease;
+  margin-bottom: 30px;
+  position: relative;
+  top: 0;
+}
+.media-custom .card {
+  position: relative;
+  overflow: hidden;
+  height: 270px;
+}
+
+.media-custom img {
+  transition: 0.3s all ease;
+}
+.media-custom .card .card-body {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+.media-custom:focus,
+.media-custom:hover {
+  top: -2px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.media-custom:focus img,
+.media-custom:hover img {
+  transform: scale(1.1);
 }

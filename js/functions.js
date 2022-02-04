@@ -1,21 +1,52 @@
-const mobileMenu = document.querySelector(".mobile-menu");
-const nav = document.querySelector(".nav-list");
-const navLinks = document.querySelectorAll(".nav-list li");
-
-function animateLinks() {
-  navLinks.forEach((link, index) => {
-    link.style.animation
-      ? (link.style.animation = "")
-      : (link.style.animation = `navLinkFade 0.5s ease forwards ${
-          index / 7 + 0.3
-        }s`);
+/* Fixed NavBar */
+document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 80) {
+      document.getElementById("navbar-top").classList.add("fixed-top");
+    } else {
+      document.getElementById("navbar-top").classList.remove("fixed-top");
+    }
   });
-}
+});
 
-function toggleMenu() {
-  nav.classList.toggle("active");
-  mobileMenu.classList.toggle("active");
-  animateLinks();
-}
+/*  Iniciar OWL Carousel Slide*/
+$(".slider .owl-carousel").owlCarousel({
+  loop: true,
+  nav: true,
+  dots: true,
+  items: 1,
+  autoplay: true,
+  smartSpeed: 1200,
+  responsive: {
+    0: {
+      items: 1,
+      nav: false,
+    },
+    600: {
+      items: 1,
+      nav: true,
+    },
+    1000: {
+      items: 1,
+      nav: true,
+    },
+  },
+});
 
-mobileMenu.addEventListener("click", toggleMenu);
+/*  Iniciar OWL Carousel Services*/
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: false,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 2,
+    },
+    1000: {
+      items: 3,
+    },
+  },
+});
