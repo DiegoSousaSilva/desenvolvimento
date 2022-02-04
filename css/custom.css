@@ -2,6 +2,9 @@ body,
 html {
   font-family: "Poppins", sans-serif;
 }
+section {
+  margin-top: 40px;
+}
 
 /*=== HEADER ===*/
 #navbar-top {
