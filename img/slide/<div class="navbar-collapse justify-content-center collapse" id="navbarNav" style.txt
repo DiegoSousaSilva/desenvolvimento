@@ -1,1 +1,0 @@
-<div class="navbar-collapse justify-content-center collapse" id="navbarNav" style>
