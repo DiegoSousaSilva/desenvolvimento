@@ -28,6 +28,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- AOS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- FONTS -->
     <style>
@@ -127,8 +135,10 @@
           <div class="col-md-10 col-md-offset-1">
             <!--=== section main heading starts ===-->
             <div class="heading-text">
-              <h2 class="section-title">Nossos <span>serviços</span></h2>
-              <h3 class="section-subtitle">
+              <h2 class="section-title" data-aos="zoom-in-up">
+                Nossos <span>serviços</span>
+              </h2>
+              <h3 class="section-subtitle" data-aos="slide-right">
                 Nós fornecemos serviços de qualidade, inovadores e modernos.
               </h3>
             </div>
@@ -137,32 +147,56 @@
         </div>
 
         <div id="album-fotos" class="row">
-          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <div
+            class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+            data-aos="fade-down-left"
+            data-aos-duration="1500"
+          >
             <div class="item-galeria foto-1">
               <span>Projetos Residenciais</span>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <div
+            class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
             <div class="item-galeria foto-2">
               <span>Projetos Corporativos</span>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <div
+            class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+            data-aos="fade-down-right"
+            data-aos-duration="1500"
+          >
             <div class="item-galeria foto-3">
               <span>Projetos Hospitalares</span>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <div
+            class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+            data-aos="fade-up-right"
+            data-aos-duration="1500"
+          >
             <div class="item-galeria foto-4">
               <span>Proteção de Incêndios</span>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <div
+            class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+            data-aos="zoom-out-up"
+            data-aos-duration="1500"
+          >
             <div class="item-galeria foto-5">
               <span>Arquitetura de Interiores</span>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <div
+            class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+            data-aos="fade-up-left"
+            data-aos-duration="1500"
+          >
             <div class="item-galeria foto-6">
               <span>Arquitetura Paisagística</span>
             </div>
@@ -173,8 +207,10 @@
 
       <!-- PROJECTS SECTION -->
       <section id="projects" class="mt-before">
-        <h2 class="section-title">Nossos <span>Projetos</span></h2>
-        <h3 class="section-subtitle">
+        <h2 class="section-title" data-aos="slide-left">
+          Nossos <span>Projetos</span>
+        </h2>
+        <h3 class="section-subtitle" data-aos="slide-right">
           Alguns dos Projetos Incríveis em que trabalhamos.
         </h3>
         <div class="container-fluid my-5">
@@ -242,17 +278,19 @@
       <section id="about" class="mt-before">
         <div class="div-row">
           <div>
-            <h2 class="section-title">Sobre a <span>Inovar</span></h2>
-            <p>
+            <h2 class="section-title" data-aos="slide-up">
+              Sobre a <span>Inovar</span>
+            </h2>
+            <p data-aos="slide-right">
               Architecture viverra tristique justo duis vitae diam neque nivamus
               aestan ateuene artines aringianu atelit finibus viverra nec lacus.
               Nedana theme erodino setlie suscipe no curabit tristique.
             </p>
-            <p>
+            <p data-aos="slide-left">
               Design inilla duiman at elit finibus viverra nec a lacus themo the
               drudea seneoice misuscipit non sagie the fermen.
             </p>
-            <p>
+            <p data-aos="slide-down">
               Planner inilla duiman at elit finibus viverra nec a lacus themo
               the drudea seneoice misuscipit non sagie the fermen. Viverra
               tristique jusio the ivite dianne onen nivami acsestion augue
@@ -260,7 +298,7 @@
             </p>
           </div>
           <div>
-            <div class="about-img">
+            <div class="about-img" data-aos="slide-left">
               <figure class="img">
                 <img src="./img/about.jpg" class="img-fluid" alt="" />
                 <figcaption class="img-legend">Nosso Escritorio</figcaption>
@@ -424,28 +462,6 @@
             </div>
             <!-- Grid column -->
 
-            <!-- Grid column 
-            
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              
-              <h6 class="text-uppercase fw-bold mb-4">Serviços</h6>
-              <p>
-                <a href="#!" class="text-reset">Arquitetura Residencial</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Arquitetura Corporativa
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Arquitetura Hospitalar</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset"
-                  >Prevenção e Proteção de Incêndios</a
-                >
-              </p>
-            </div>
-            -->
-
             <!-- Grid column -->
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
               <!-- Links -->
@@ -509,6 +525,12 @@
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
