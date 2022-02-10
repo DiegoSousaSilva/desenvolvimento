@@ -16,6 +16,7 @@ $(".slider .owl-carousel").owlCarousel({
   dots: true,
   items: 1,
   autoplay: true,
+  autoplayHoverPause: true,
   smartSpeed: 1200,
   responsive: {
     0: {
@@ -38,6 +39,7 @@ $(".owl-carousel").owlCarousel({
   loop: true,
   margin: 10,
   nav: false,
+  autoplay: true,
   responsive: {
     0: {
       items: 1,

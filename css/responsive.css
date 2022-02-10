@@ -18,11 +18,15 @@
     flex-direction: column;
   }
 
-  /*.media-custom .card {
-    height: 200px;
-  }*/
-
   .slider {
     margin-top: 0;
+  }
+
+  #contact {
+    height: 100%;
+  }
+
+  .form-content {
+    width: 100%;
   }
 }

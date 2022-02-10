@@ -12,6 +12,23 @@ section {
   height: 120px;
   margin: -120px 0 0;
 }
+main.container {
+  margin-top: 60px;
+}
+.section-title {
+  font-size: 38px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  color: var(--text);
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 6px;
+  word-spacing: 5px;
+  margin-bottom: 30px;
+}
+.section-title span {
+  color: var(--text-active);
+}
 
 /*=== HEADER ===*/
 #navbar-top {
@@ -32,18 +49,18 @@ section {
 }
 
 #navbar-top .nav-link {
-  color: var(--text);
+  color: #000;
   text-transform: uppercase;
   font-weight: 600;
   padding-left: 0;
   padding-right: 0;
-
+  text-shadow: 1px 1px 1px #fff;
   border-bottom: solid 4px transparent;
 }
 
 #navbar-top .nav-link:hover {
-  border-bottom: solid 4px var(--text-active);
-  color: var(--text-active);
+  border-bottom: solid 4px rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 /*=== Slider  ===*/
@@ -151,66 +168,101 @@ section {
 
 /*=== SERVICES ===*/
 
-.icon-services {
-  font-size: 100px;
-  margin: 0 0 40px 0;
+#services #album-fotos {
+  margin: 0 auto;
+  padding: 50px;
+  overflow: hidden;
 }
-.card-services h3 {
-  margin-bottom: 30px;
+
+#services #album-fotos .item-galeria {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 8px;
+  border: 3px solid #fff;
+  background-color: #fff;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in;
+  background-position: 50% 50%;
+  background-size: 400px 400px;
 }
-.color-icon {
-  color: var(--text-active);
+
+#services #album-fotos .item-galeria span {
+  opacity: 0;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 12pt;
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#services #album-fotos .item-galeria:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+#services #album-fotos .item-galeria:hover span {
+  opacity: 1;
+}
+
+#services #album-fotos .item-galeria:hover {
+  background-position: 0px 0px;
+  background-size: 300px 300px;
+}
+
+#services #album-fotos .item-galeria.foto-1 {
+  background: url("../img/services/residencial.png") no-repeat;
+}
+#services #album-fotos .item-galeria.foto-2 {
+  background: url("../img/services/corporativa.png") no-repeat;
+}
+#services #album-fotos .item-galeria.foto-3 {
+  background: url("../img/services/hospitalar.png") no-repeat;
+}
+#services #album-fotos .item-galeria.foto-4 {
+  background: url("../img/services/protecao-incendio.png") no-repeat;
+}
+#services #album-fotos .item-galeria.foto-5 {
+  background: url("../img/services/interiores.png") no-repeat;
+}
+#services #album-fotos .item-galeria.foto-6 {
+  background: url("../img/services/paisagismo.png") no-repeat;
 }
 
 /*=== ABOUT ===*/
-main.container {
-  margin-top: 60px;
-}
-.section-title {
-  font-size: 38px;
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  color: var(--text);
-  text-transform: uppercase;
-  position: relative;
-  letter-spacing: 8px;
-  word-spacing: 5px;
-  margin-bottom: 30px;
-}
-.section-title span {
-  color: var(--text-active);
-}
+
 section p {
   font-family: "Didact Gothic", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.75em;
   color: #777;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .div-row {
   display: flex;
   flex-direction: row;
 }
-
-section .img {
+#about-img {
+}
+figure.img {
   padding: 0 15px 30px 30px;
   position: relative;
-}
-
-img {
-  width: 100%;
-  height: auto;
 }
 
 .img-legend {
   padding: 20px 15px;
   color: #272727;
-  /*position: absolute;*/
-  z-index: 3;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
   right: 45px;
-  width: 40% !important;
+  width: 70% !important;
   background: #f4f4f4;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
@@ -221,7 +273,7 @@ img {
   text-align: center;
 }
 
-/*=== SERVICES ===*/
+/*=== PROJECTS ===*/
 
 .media-custom {
   background-color: #fff;
@@ -256,6 +308,7 @@ img {
 }
 
 /*=== CONTACT ===*/
+
 #contact {
   background: rgba(0, 0, 0, 0.7);
   background-image: url("../img/about.jpg");
@@ -266,10 +319,16 @@ img {
   width: 100%;
   height: 100vh;
 }
-
 #contact h1,
 #contact p {
   color: #fff;
+}
+#contact .row {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #contact p {
