@@ -10,7 +10,7 @@
               {
 
 
-                $assunto =  $_POST['assunto'];
+                $assunto =  $_POST['subject'];
                 $mensagem = $_POST['message'];
 
                 if(send($assunto, $mensagem)){
