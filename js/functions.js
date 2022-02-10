@@ -25,7 +25,7 @@ $(".slider .owl-carousel").owlCarousel({
     },
     600: {
       items: 1,
-      nav: true,
+      nav: false,
     },
     1000: {
       items: 1,
@@ -57,6 +57,6 @@ $(".owl-carousel").owlCarousel({
 
 AOS.init({
   duration: 1000,
-  offset: 120,
+  offset: 200,
   easing: "ease-in-out",
 });
