@@ -14,6 +14,20 @@
     align-items: center;
   }
 
+  /*SLIDER INICIAL*/
+  .slider .caption {
+    position: absolute;
+    top: 80%;
+    left: 0;
+  }
+  .slider .caption .title {
+    font-size: 40px;
+    padding: 5px;
+  }
+  .slider .caption .desc {
+    opacity: 0;
+  }
+
   .div-row {
     flex-direction: column;
   }
@@ -21,9 +35,35 @@
   .slider {
     margin-top: 0;
   }
+  /*SERVICES*/
 
+  #services #album-fotos {
+    padding: 20px;
+  }
+
+  /*CONTACT*/
   #contact {
     height: 100%;
+  }
+  #contact .row {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  #contact .form-control[type="submit"] {
+    width: 200px;
+    margin-left: 20%;
+  }
+
+  .head .section-title {
+    font-size: 22px;
+    letter-spacing: 4px;
+    word-spacing: 3px;
+    margin-bottom: 15px;
+  }
+  .head .section-subtitle {
+    font-size: 14px;
   }
 
   .form-content {
