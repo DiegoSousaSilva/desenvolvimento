@@ -30,7 +30,10 @@
     padding: 10px;
   }
   .slider .caption .desc {
-    opacity: 0;
+    font-size: 18px;
+    margin: 10px;
+    letter-spacing: 1.5px;
+    line-height: 25px;
   }
 
   .div-row {
@@ -47,6 +50,10 @@
   }
   #services #album-fotos .item-galeria span {
     opacity: 1;
+  }
+
+  /* PROJECTS*/
+  .media-custom .card {
   }
 
   /*CONTACT*/
