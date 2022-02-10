@@ -13,16 +13,21 @@
   .nav-item {
     align-items: center;
   }
+  .section-title {
+    font-size: 24px;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    margin-bottom: 20px;
+  }
 
   /*SLIDER INICIAL*/
   .slider .caption {
-    position: absolute;
-    top: 80%;
     left: 0;
+    transform: none;
   }
   .slider .caption .title {
     font-size: 40px;
-    padding: 5px;
+    padding: 10px;
   }
   .slider .caption .desc {
     opacity: 0;
@@ -39,6 +44,9 @@
 
   #services #album-fotos {
     padding: 20px;
+  }
+  #services #album-fotos .item-galeria span {
+    opacity: 1;
   }
 
   /*CONTACT*/
