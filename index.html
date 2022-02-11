@@ -323,6 +323,7 @@
     <!-- CONTACT SECTION -->
     <section id="contact">
       <div class="row mt-5 py-5 mx-auto">
+        <div id="info"></div>
         <!-- SECTION CONTACT INFORMATIONS -->
         <section class="contact-info col-md-12 col-lg-4 mb-md-0 mb-4">
           <h1 class="mb-4 fs-2 fw-bold lh-base">Contato</h1>
@@ -350,7 +351,12 @@
                   </div>
                 </div>
 
-                <form action="./enviar.php" class="row g-3" method="post">
+                <form
+                  action="./enviar.php"
+                  class="row g-3"
+                  method="post"
+                  id="form"
+                >
                   <div class="col-md-6 input-container mb-3">
                     <input
                       type="text"
@@ -404,7 +410,7 @@
                     <input
                       type="submit"
                       class="form-control btn btn-primary"
-                      required
+                      onclick="submitForm('form')"
                     />
                   </div>
                 </form>

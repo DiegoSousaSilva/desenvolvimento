@@ -32,7 +32,7 @@ main.container {
 
 /*=== HEADER ===*/
 #navbar-top {
-  width: 100%;
+  width: 100vw;
   background: transparent;
   transition: background ease-in 0.5s;
 }
@@ -70,7 +70,7 @@ main.container {
 
 .slider .item {
   height: 500px;
-  width: 100%;
+  width: 100vw;
   background: rgba(0, 0, 0, 0.2);
   background-position: center;
   background-size: cover;
@@ -208,7 +208,7 @@ main.container {
   padding: 15px;
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   text-align: center;
 }
 
@@ -306,7 +306,7 @@ figure.img {
   transition: 0.3s all ease;
 }
 .media-custom .card .card-body {
-  width: 100%;
+  width: 100vw;
   background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   bottom: 0;
@@ -334,7 +334,7 @@ figure.img {
   background-size: cover;
   background-blend-mode: darken;
   background-attachment: fixed;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 #contact h1,
@@ -342,7 +342,7 @@ figure.img {
   color: #fff;
 }
 #contact .row {
-  width: 100%;
+  width: 100vw;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
@@ -385,7 +385,7 @@ figure.img {
 
 .input-container .form-type {
   display: block;
-  width: 100%;
+  width: 100vw;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;

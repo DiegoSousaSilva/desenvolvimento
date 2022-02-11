@@ -60,3 +60,31 @@ AOS.init({
   offset: 120,
   easing: "ease-in-out",
 });
+
+//SUBMIT FORM
+
+function submitForm(id_form) {
+  let frm = $("#" + id_form);
+  frm.submit(function (e) {
+    e.preventDefault();
+    //console.log("OK");
+
+    //Submissao via AJAX
+    $.ajax({
+      type: frm.attr("method"),
+      url: frm.attr("action"),
+      data: frm.serialize(),
+      //Sucesso
+      success: function (i) {
+        $("#info").html("Enviado com Sucesso!");
+        //console.log("Dados submetidos com sucesso.");
+        //console.log(i);
+      },
+      //Erro
+      error: function () {
+        $("#info").html("Aconteceu um erro ao tentar enviar!");
+        //console.log("Aconteceu um erro!");
+      },
+    });
+  });
+}
