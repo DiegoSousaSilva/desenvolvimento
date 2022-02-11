@@ -33,7 +33,7 @@ main.container {
 
 /*=== HEADER ===*/
 #navbar-top {
-  width: 100vw;
+  width: 100%;
   background: transparent;
   transition: background ease-in 0.5s;
 }
@@ -71,7 +71,7 @@ main.container {
 
 .slider .item {
   height: 500px;
-  width: 100vw;
+  width: 100%;
   background: rgba(0, 0, 0, 0.2);
   background-position: center;
   background-size: cover;
@@ -183,21 +183,20 @@ main.container {
 
 #services #album-fotos {
   margin: 0 auto;
-  padding: 50px;
+  padding: 30px;
   overflow: hidden;
 }
 
 #services #album-fotos .item-galeria {
   position: relative;
-  width: 300px;
-  height: 300px;
-  margin: 8px;
+  width: 330px;
+  height: 330px;
+  margin: 10px;
   border: 3px solid #fff;
   background-color: #fff;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
   transition: all 0.3s ease-in;
-  background-position: 50% 50%;
-  background-size: 400px 400px;
+  background-size: cover;
 }
 
 #services #album-fotos .item-galeria span {
@@ -209,7 +208,7 @@ main.container {
   padding: 15px;
   position: absolute;
   bottom: 0;
-  width: 100vw;
+  width: 100%;
   text-align: center;
 }
 
@@ -220,11 +219,6 @@ main.container {
 
 #services #album-fotos .item-galeria:hover span {
   opacity: 1;
-}
-
-#services #album-fotos .item-galeria:hover {
-  background-position: 0px 0px;
-  background-size: 300px 300px;
 }
 
 #services #album-fotos .item-galeria.foto-1 {
@@ -307,7 +301,7 @@ figure.img {
   transition: 0.3s all ease;
 }
 .media-custom .card .card-body {
-  width: 100vw;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   bottom: 0;
@@ -335,7 +329,7 @@ figure.img {
   background-size: cover;
   background-blend-mode: darken;
   background-attachment: fixed;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 #contact h1,
@@ -343,7 +337,7 @@ figure.img {
   color: #fff;
 }
 #contact .row {
-  width: 100vw;
+  width: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
@@ -386,7 +380,7 @@ figure.img {
 
 .input-container .form-type {
   display: block;
-  width: 100vw;
+  width: 100%;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;

@@ -46,7 +46,14 @@
   /*SERVICES*/
 
   #services #album-fotos {
-    padding: 20px;
+    padding: 0;
+    margin: 0;
+  }
+
+  #services #album-fotos .item-galeria {
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
   #services #album-fotos .item-galeria span {
     opacity: 1;
