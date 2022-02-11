@@ -1,7 +1,10 @@
 body,
 html {
   font-family: "Poppins", sans-serif;
+}
+main {
   overflow-x: hidden;
+  background-color: #454c52;
 }
 section {
   margin-top: 40px;
@@ -18,7 +21,6 @@ main.container {
 }
 .section-title {
   font-size: 38px;
-  font-family: "Oswald", sans-serif;
   font-weight: 600;
   color: var(--text);
   text-transform: uppercase;
@@ -30,6 +32,17 @@ main.container {
 .section-title span {
   color: var(--text-active);
 }
+.section-subtitle {
+  color: #fff;
+}
+
+section p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75em;
+  color: #777;
+  margin-bottom: 10px;
+}
 
 /*=== HEADER ===*/
 #navbar-top {
@@ -39,7 +52,7 @@ main.container {
 }
 
 .fixed-top {
-  background: #f8f9fa !important;
+  background: var(--background) !important;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
   z-index: 1000;
   transition: transform 0.3s;
@@ -50,12 +63,12 @@ main.container {
 }
 
 #navbar-top .nav-link {
-  color: #000;
+  color: var(--text);
   text-transform: uppercase;
   font-weight: 600;
   padding-left: 0;
   padding-right: 0;
-  text-shadow: 1px 1px 1px #fff;
+  text-shadow: 1px 1px 1px #000;
   border-bottom: solid 4px transparent;
 }
 
@@ -169,11 +182,13 @@ main.container {
 
 /*=== WELLCOME ===*/
 #wellcome {
+  background: rgba(0, 0, 0, 0.2);
   background-image: url("../img/fundo-de-formas.jpg");
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-blend-mode: darken;
   padding-top: 150px;
   padding-bottom: 150px;
   margin-top: 0;
@@ -242,13 +257,8 @@ main.container {
 
 /*=== ABOUT ===*/
 
-section p {
-  font-family: "Didact Gothic", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.75em;
-  color: #777;
-  margin-bottom: 10px;
+#about p {
+  color: #ced4da;
 }
 
 .div-row {
@@ -286,6 +296,7 @@ figure.img {
 
 .media-custom {
   background-color: #fff;
+  border-radius: 10px;
   transition: 0.3s all ease;
   margin-bottom: 30px;
   position: relative;
@@ -358,7 +369,6 @@ figure.img {
   border-radius: 5px;
   margin-top: -40px;
   box-shadow: 0px 7px 15px 5px #1952b0;
-  /*box-shadow: -2px 14px 27px 9px rgba(124, 84, 35, 0.62);*/
 }
 .input-container {
   position: relative;
@@ -407,10 +417,59 @@ figure.img {
 #contact .form-control:valid ~ .form-label {
   left: 8px;
   top: -8px;
-  color: var(--text);
+  color: #272727;
 }
 
 #contact .form-control[type="submit"] {
   width: 140px;
   margin-left: 40%;
+}
+
+/*=== FOOTER ===*/
+
+#footer section {
+  margin-top: 0;
+}
+
+/*=== MODAL ===*/
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal > div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 15px 20px;
+  background: #fff;
+}
+.fechar {
+  position: absolute;
+  width: 30px;
+  right: -15px;
+  top: -20px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 5px;
+  background: #ff4545;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #8d0000;
 }

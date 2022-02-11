@@ -1,6 +1,8 @@
 :root {
   --primary: #194868;
   --secondary: #000014;
+  --background: #212529;
+  --text: #fff;
 
   --text-active: #b19777;
 }
