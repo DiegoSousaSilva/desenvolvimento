@@ -63,6 +63,8 @@ AOS.init({
 
 //SUBMIT FORM
 
+$("#phonenumber").mask("(00) 0000-0000");
+
 function submitForm(id_form) {
   let frm = $("#" + id_form);
   frm.submit(function (e) {
@@ -76,7 +78,7 @@ function submitForm(id_form) {
       data: frm.serialize(),
       //Sucesso
       success: function (i) {
-        $("#info").html("Enviado com Sucesso!");
+        $("#info").html("Mensagem enviada com Sucesso!");
         //console.log("Dados submetidos com sucesso.");
         //console.log(i);
       },
