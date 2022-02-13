@@ -63,7 +63,7 @@ AOS.init({
 
 //SUBMIT FORM
 
-$("#phonenumber").mask("(00) 0000-0000");
+$("#phonenumber").mask("(00) 00000-0000");
 
 function submitForm(id_form) {
   let frm = $("#" + id_form);
@@ -78,13 +78,22 @@ function submitForm(id_form) {
       data: frm.serialize(),
       //Sucesso
       success: function (i) {
-        $("#info").html("Mensagem enviada com Sucesso!");
+        frm.each(function () {
+          this.reset();
+        });
+        $("#info")
+          .html("Mensagem enviada com Sucesso! Em breve entraremos em contato")
+          .css("background", "#1952b0");
+
         //console.log("Dados submetidos com sucesso.");
         //console.log(i);
       },
       //Erro
       error: function () {
-        $("#info").html("Aconteceu um erro ao tentar enviar!");
+        $("#info")
+          .html("Aconteceu um erro ao tentar enviar!")
+          .css("background", "red");
+
         //console.log("Aconteceu um erro!");
       },
     });

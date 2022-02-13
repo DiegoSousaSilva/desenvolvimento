@@ -23,9 +23,11 @@ function send($assunto, $mensagem){
         $mail->Username = EMAIL_ORIGEM;
         $mail->Password = SENHA_EMAIL;
         $mail->Port = 587;
+
         $mail->setFrom(EMAIL_ORIGEM);
         $mail->addAddress(EMAIL_DESTINO);
         $mail->addReplyTo(EMAIL_DESTINO);
+        
         $mail->isHTML(true);
         $mail->CharSet = 'UTF-8';
         $mail->Subject = $assunto;
