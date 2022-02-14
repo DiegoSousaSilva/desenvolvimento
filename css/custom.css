@@ -152,7 +152,7 @@ section p {
   outline: none;
 }
 
-.slider .owl-dots button.owl-dot .active {
+.slider .owl-dots button.owl-dot.active {
   background: #fff;
 }
 
