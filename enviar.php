@@ -14,15 +14,15 @@
                 $telefone = $_POST['phonenumber'];
                 $msg = $_POST['message'];
                 
-                 $mensagem .= " Nome: ".$nome."
+                 $mensagem .= " Nome: <b>".$nome."</b>
                   "; // Texto da mensagem
-                  $mensagem .= "<br> E-mail: ".$email."
+                  $mensagem .= "<br> E-mail: <b>".$email."</b>
                   "; // Texto da mensagem
-                  $mensagem .= "<br> Telefone: ".$telefone."
+                  $mensagem .= "<br> Telefone: <b>".$telefone."</b>
                   "; // Texto da mensagem                  
-                  $mensagem .= "<br> Assunto: ".$assunto."
+                  $mensagem .= "<br> Assunto: <b>".$assunto."</b>
                   "; // Texto da mensagem
-                  $mensagem .= "<br> Mensagem: ".nl2br($msg)."
+                  $mensagem .= "<br> <br>  Mensagem: <b>".nl2br($msg)."</b>
                   "; // Texto da mensagem
 
                 if(send($assunto, $mensagem)){

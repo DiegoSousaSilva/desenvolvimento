@@ -7,6 +7,9 @@
 
 /* MAX MEDIUM */
 @media (max-width: 991.98px) {
+  #navbar-top {
+    background-color: var(--background);
+  }
   #navbar-top .navbar-collapse {
     width: 100%;
   }
@@ -21,6 +24,9 @@
   }
 
   /*SLIDER INICIAL*/
+  .slider {
+    margin-top: 0;
+  }
   .slider .caption {
     left: 0;
     transform: none;
