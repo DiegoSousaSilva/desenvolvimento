@@ -34,11 +34,12 @@ $(".slider .owl-carousel").owlCarousel({
   },
 });
 
-/*  Iniciar OWL Carousel Services*/
+/*  Iniciar OWL Carousel Projects*/
 $(".owl-carousel").owlCarousel({
   loop: true,
   margin: 10,
   nav: false,
+  slideBy: 2,
   autoplay: true,
   responsive: {
     0: {
@@ -67,9 +68,12 @@ $("#phonenumber").mask("(00) 00000-0000");
 
 function submitForm(id_form) {
   let frm = $("#" + id_form);
+
   frm.submit(function (e) {
     e.preventDefault();
     //console.log("OK");
+
+    $("#btn-enviar").prop("disabled", true).text("Enviando...");
 
     //Submissao via AJAX
     $.ajax({
@@ -81,19 +85,24 @@ function submitForm(id_form) {
         frm.each(function () {
           this.reset();
         });
-        $("#info")
+        $('button[type="submit"]').prop("disabled", false).text("Enviado");
+
+        $("#info-msg")
           .html("Mensagem enviada com Sucesso! Em breve entraremos em contato")
           .css("background", "#1952b0");
-
+        setTimeout(() => {
+          $("#staticBackdrop").modal("hide");
+          $('button[type="submit"]').prop("disabled", false).text("Enviar");
+          $("#info-msg").html("").css("background", "none");
+        }, 3000);
         //console.log("Dados submetidos com sucesso.");
         //console.log(i);
       },
       //Erro
       error: function () {
-        $("#info")
+        $("#info-msg")
           .html("Aconteceu um erro ao tentar enviar!")
           .css("background", "red");
-
         //console.log("Aconteceu um erro!");
       },
     });

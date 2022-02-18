@@ -30,6 +30,7 @@
   .slider .caption {
     left: 0;
     transform: none;
+    top: 30%;
   }
   .slider .caption .title {
     font-size: 40px;
@@ -63,7 +64,8 @@
   }
 
   /* PROJECTS*/
-  .media-custom .card {
+  .media-custom .card .card-body h4 {
+    font-size: 1.25rem;
   }
 
   /*CONTACT*/

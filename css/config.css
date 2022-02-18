@@ -1,8 +1,8 @@
 :root {
-  --primary: #194868;
-  --secondary: #000014;
+  --primary: #b19777;
+  --bg-secondary: #454c52;
   --background: #212529;
-  --text: #fff;
 
-  --text-active: #b19777;
+  --text: #fff;
+  --text-secondary: #ced4da;
 }
