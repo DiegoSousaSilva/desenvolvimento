@@ -96,4 +96,11 @@
   .form-content {
     width: 100%;
   }
+
+  #aboutModal,
+  #aboutModal .video-modal .row,
+  #aboutModal .video-modal .row .card .card-body {
+    margin: 0;
+    padding: 0;
+  }
 }

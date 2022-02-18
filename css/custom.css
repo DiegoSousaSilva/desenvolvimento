@@ -537,6 +537,9 @@ figure.img {
   background-color: var(--bg-secondary);
   margin: 0;
 }
+#aboutModal .video-modal .card {
+  height: 28.125rem;
+}
 #aboutModal .aboutBaviera {
   background-color: var(--background);
   margin-top: -6rem;
