@@ -62,6 +62,22 @@ AOS.init({
   easing: "ease-in-out",
 });
 
+/* ANIMATION WELCOME */
+
+function typeWriter(e) {
+  const txtArray = e.innerHTML.split("");
+  e.innerHTML = "";
+  txtArray.forEach((letter, i) => {
+    setTimeout(function () {
+      e.innerHTML += letter;
+    }, 80 * i);
+  });
+}
+
+const welcome = document.querySelector(".animation-welcome");
+
+typeWriter(welcome);
+
 //SUBMIT FORM
 
 $("#phonenumber").mask("(00) 00000-0000");

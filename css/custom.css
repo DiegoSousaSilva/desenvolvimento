@@ -36,15 +36,28 @@ main.container {
   color: var(--text-secondary);
   font-size: 1.375rem;
 }
+
 .logo-title {
+  text-align: center;
+}
+
+.logo-title h1 {
   color: var(--text);
-  font-size: 1.375rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 0.125rem;
+  letter-spacing: 0.2rem;
 }
 .logo-title span {
-  color: var(--primary);
+  color: red;
+}
+.logo-title p {
+  padding: 0.1rem;
+  color: var(--text);
+  font-size: 0.5rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
 }
 
 section p {
@@ -102,6 +115,9 @@ section p {
   background-blend-mode: darken;
 }
 
+.slider .slide0 {
+  background-image: url("../assets/img/slide/slider-incendio.jpg");
+}
 .slider .slide1 {
   background-image: url("../assets/img/slide/1.png");
 }
@@ -210,8 +226,8 @@ section p {
   right: 1.875rem;
 }
 
-/*=== WELLCOME ===*/
-#wellcome {
+/*=== WELCOME ===*/
+#welcome {
   background: rgba(0, 0, 0, 0.5);
   background-image: url("../assets/img/fundo-de-formas.jpg");
   background-position: center top;
@@ -222,6 +238,37 @@ section p {
   padding-top: 9.375rem;
   padding-bottom: 9.375rem;
   margin-top: 0;
+}
+
+#welcome .wrapper-welcome {
+  width: 100%;
+}
+
+#welcome h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.125rem;
+  word-spacing: 0.25;
+}
+#welcome h1::after {
+  content: "|";
+  opacity: 1;
+  animation: blinkCursor 0.7s infinite;
+}
+#welcome p {
+  font-size: 1.125rem;
+  font-weight: 100;
+  margin-bottom: 2rem;
+}
+
+@keyframes blinkCursor {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 /*=== SERVICES ===*/
@@ -257,6 +304,9 @@ section p {
   width: 100%;
   text-align: center;
 }
+#services #album-fotos .item-galeria main {
+  opacity: 0;
+}
 
 #services #album-fotos .item-galeria:hover {
   transform: scale(1.1);
@@ -277,7 +327,7 @@ section p {
   background: url("../assets/img/services/hospitalar.png") no-repeat;
 }
 #services #album-fotos .item-galeria.foto-4 {
-  background: url("../assets/img/services/protecao-incendio.png") no-repeat;
+  background: url("../assets/img/services/protect-incendio.jpg") no-repeat;
 }
 #services #album-fotos .item-galeria.foto-5 {
   background: url("../assets/img/services/interiores.png") no-repeat;
