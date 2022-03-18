@@ -119,13 +119,13 @@ section p {
   background-image: url("../assets/img/slide/slider-incendio.jpg");
 }
 .slider .slide1 {
-  background-image: url("../assets/img/slide/1.png");
+  background-image: url("../assets/img/slide/slider-residencial.png");
 }
 .slider .slide2 {
-  background-image: url("../assets/img/slide/2.png");
+  background-image: url("../assets/img/slide/slider-interior-design.jpg");
 }
 .slider .slide3 {
-  background-image: url("../assets/img/slide/4.png");
+  background-image: url("../assets/img/slide/slider-eas.jpg");
 }
 
 .slider .caption {
@@ -275,65 +275,121 @@ section p {
 
 #services #album-fotos {
   margin: 0 auto;
-  padding: 1.875rem;
+
   overflow: hidden;
 }
 
-#services #album-fotos .item-galeria {
-  border-radius: 0.375rem;
-  position: relative;
-  width: 20.625rem; /*330px*/
-  height: 20.625rem; /*330px*/
-  margin: 0.625rem;
-  border: 0.063rem solid transparent;
-  background-color: var(--text);
-  box-shadow: 0.063rem 0.063rem 0.188rem rgba(0, 0, 0, 0.4);
-  transition: all 0.3s ease-in;
-  background-size: cover;
-}
-
-#services #album-fotos .item-galeria span {
+#services #album-fotos .front span {
   opacity: 0;
   color: var(--text);
   text-shadow: 0.063rem 0.063rem 0.063rem #000;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
   font-size: 1.3rem;
+  font-weight: 300;
   padding: 0.938rem;
   position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
-}
-#services #album-fotos .item-galeria main {
-  opacity: 0;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 
-#services #album-fotos .item-galeria:hover {
-  transform: scale(1.1);
+#services #album-fotos .front:hover span {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+#services #album-fotos .front#foto-1 {
+  background: url("../assets/img/services/protect-incendio.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#services #album-fotos .front#foto-2 {
+  background: url("../assets/img/services/residencial.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#services #album-fotos .front#foto-3 {
+  background: url("../assets/img/services/condominios.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#services #album-fotos .front#foto-4 {
+  background: url("../assets/img/services/paisagismo.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#services #album-fotos .front#foto-5 {
+  background: url("../assets/img/services/interiores.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#services #album-fotos .front#foto-6 {
+  background: url("../assets/img/services/eas.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#services #album-fotos .flip {
+  transform: rotateY(180deg);
+}
+.face {
+  position: absolute;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+  border: 0.063rem solid transparent;
+  background-color: var(--text);
+  box-shadow: 0.188rem 0.188rem 0.188rem rgba(0, 0, 0, 0.4);
+  background-size: cover;
+}
+#services #album-fotos .flip .show {
   z-index: 1;
 }
-
-#services #album-fotos .item-galeria:hover span {
-  opacity: 1;
+.face.front {
+  transition: all 0.8s ease-in;
+  transform: rotateY(180deg);
+}
+.face.back {
+  padding: 0.5rem;
+  background: rgb(184, 134, 11);
+  background: linear-gradient(
+    90deg,
+    rgba(184, 134, 11, 1) 0%,
+    rgba(133, 99, 17, 1) 43%,
+    rgba(103, 84, 36, 1) 100%
+  );
+  /*background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(94, 51, 122, 1) 43%,
+    rgba(81, 64, 93, 1) 100%
+  );*/
+  backface-visibility: hidden;
+  border-radius: 0.5rem;
 }
 
-#services #album-fotos .item-galeria.foto-1 {
-  background: url("../assets/img/services/residencial.png") no-repeat;
+.face.back h2 {
+  text-align: center;
+  color: var(--text);
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
-#services #album-fotos .item-galeria.foto-2 {
-  background: url("../assets/img/services/corporativa.png") no-repeat;
+.face.back li {
+  list-style: inside;
+  color: var(--text);
+  font-size: 1rem;
 }
-#services #album-fotos .item-galeria.foto-3 {
-  background: url("../assets/img/services/hospitalar.png") no-repeat;
-}
-#services #album-fotos .item-galeria.foto-4 {
-  background: url("../assets/img/services/protect-incendio.jpg") no-repeat;
-}
-#services #album-fotos .item-galeria.foto-5 {
-  background: url("../assets/img/services/interiores.png") no-repeat;
-}
-#services #album-fotos .item-galeria.foto-6 {
-  background: url("../assets/img/services/paisagismo.png") no-repeat;
+#services #album-fotos .service {
+  width: 20.625rem;
+  height: 20.625rem;
+  position: relative;
+  border-bottom-left-radius: 0.5rem;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  transition: all 0.5s;
 }
 
 /*=== ABOUT ===*/
@@ -348,8 +404,7 @@ section p {
   flex-direction: row;
   margin-bottom: 4rem;
 }
-#about-img {
-}
+
 figure.img {
   padding: 0 0.938rem 1.875rem 1.875rem;
   position: relative;
@@ -412,12 +467,15 @@ figure.img {
 /*=== PROJECTS ===*/
 
 #projects .media-custom {
+  width: 500px;
+  height: 550px;
   background-color: #fff;
   border-radius: 10px;
   transition: 0.3s all ease;
   margin-bottom: 30px;
   position: relative;
   top: 0;
+  box-shadow: 0.188rem 0.188rem 0.25rem rgba(0, 0, 0, 0.4);
 }
 #projects .media-custom .card {
   border-radius: 0.625rem;
@@ -426,6 +484,8 @@ figure.img {
 }
 
 #projects .media-custom img {
+  width: 100%;
+  height: 100%;
   transition: 0.3s all ease;
 }
 #projects .media-custom .card .card-body {
@@ -511,7 +571,7 @@ figure.img {
   height: 1.125rem;
 }
 
-.icon-redes.face:hover {
+.icon-redes.facebook:hover {
   background-color: #3b5998;
 }
 .icon-redes.twitter:hover {
@@ -607,4 +667,19 @@ figure.img {
 #aboutModal .aboutBaviera img {
   height: 100%;
   width: 100%;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  /* rtl:remove */
+  letter-spacing: -0.05rem;
 }

@@ -49,17 +49,12 @@
 
   /*SERVICES*/
 
-  #services #album-fotos {
-    padding: 0;
-    margin: 0;
-  }
-
-  #services #album-fotos .item-galeria {
+  #services #album-fotos article {
     margin-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
   }
-  #services #album-fotos .item-galeria span {
+  #services #album-fotos .front span {
     opacity: 1;
   }
 

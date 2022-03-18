@@ -78,6 +78,15 @@ const welcome = document.querySelector(".animation-welcome");
 
 typeWriter(welcome);
 
+/* FLIPCARD SERVICES */
+function flipCard(id) {
+  const front = document.querySelector(`#${id}`);
+  const card = document.querySelector(`#${id}`).parentNode;
+
+  card.classList.toggle("flip");
+  front.classList.toggle("show");
+}
+
 //SUBMIT FORM
 
 $("#phonenumber").mask("(00) 00000-0000");
