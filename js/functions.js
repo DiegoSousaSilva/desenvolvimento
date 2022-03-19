@@ -37,7 +37,7 @@ $(".slider .owl-carousel").owlCarousel({
 /*  Iniciar OWL Carousel Projects*/
 $(".owl-carousel").owlCarousel({
   loop: true,
-  margin: 10,
+
   nav: false,
   slideBy: 2,
   autoplay: true,
@@ -46,7 +46,7 @@ $(".owl-carousel").owlCarousel({
       items: 1,
     },
     600: {
-      items: 1,
+      items: 2,
     },
     1000: {
       items: 2,

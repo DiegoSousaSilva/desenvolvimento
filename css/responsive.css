@@ -1,11 +1,34 @@
-/* MIN WIDTH */
+/* MIN WIDTH (lg>)*/
 @media (min-width: 992px) {
   #navbar-top .nav-link {
     margin: 0 15px;
   }
 }
 
-/* MAX MEDIUM */
+/* LG ONLY (lg)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /*====== SERVICES ======*/
+  #services #album-fotos .service {
+    width: 18.75rem;
+    height: 18.75rem;
+  }
+  /*====== PROJECTS ======*/
+  #projects .media-custom {
+    width: 425px;
+    height: 465px;
+  }
+}
+
+/* SM ONLY (lg)*/
+@media (max-width: 576px) {
+  /*====== PROJECTS ======*/
+  #projects .media-custom {
+    width: 325px;
+    height: 350px;
+  }
+}
+
+/* MAX MEDIUM (md<)*/
 @media (max-width: 991.98px) {
   #navbar-top {
     background-color: var(--background);
@@ -49,11 +72,6 @@
 
   /*SERVICES*/
 
-  #services #album-fotos article {
-    margin-bottom: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  }
   #services #album-fotos .front span {
     opacity: 1;
   }

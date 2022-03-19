@@ -68,6 +68,14 @@ section p {
   margin-bottom: 0.625;
 }
 
+.contain {
+  object-fit: contain;
+}
+.resize-img {
+  max-width: 500px;
+  max-height: 460px;
+}
+
 /*=== HEADER ===*/
 #navbar-top {
   width: 100%;
@@ -275,7 +283,6 @@ section p {
 
 #services #album-fotos {
   margin: 0 auto;
-
   overflow: hidden;
 }
 
@@ -360,12 +367,6 @@ section p {
     rgba(133, 99, 17, 1) 43%,
     rgba(103, 84, 36, 1) 100%
   );
-  /*background: linear-gradient(
-    90deg,
-    rgba(131, 58, 180, 1) 0%,
-    rgba(94, 51, 122, 1) 43%,
-    rgba(81, 64, 93, 1) 100%
-  );*/
   backface-visibility: hidden;
   border-radius: 0.5rem;
 }
