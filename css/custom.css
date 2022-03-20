@@ -281,12 +281,12 @@ section p {
 
 /*=== SERVICES ===*/
 
-#services #album-fotos {
+#services #services-items {
   margin: 0 auto;
   overflow: hidden;
 }
 
-#services #album-fotos .front span {
+#services #services-items .front span {
   opacity: 0;
   color: var(--text);
   text-shadow: 0.063rem 0.063rem 0.063rem #000;
@@ -302,43 +302,43 @@ section p {
   border-bottom-right-radius: 0.5rem;
 }
 
-#services #album-fotos .front:hover span {
+#services #services-items .front:hover span {
   opacity: 1;
   transition: all 0.5s ease-in-out;
 }
 
-#services #album-fotos .front#foto-1 {
+#services #services-items .front#foto-1 {
   background: url("../assets/img/services/protect-incendio.jpg") no-repeat;
   background-position: center;
   background-size: cover;
 }
-#services #album-fotos .front#foto-2 {
+#services #services-items .front#foto-2 {
   background: url("../assets/img/services/residencial.png") no-repeat;
   background-position: center;
   background-size: cover;
 }
-#services #album-fotos .front#foto-3 {
+#services #services-items .front#foto-3 {
   background: url("../assets/img/services/condominios.jpg") no-repeat;
   background-position: center;
   background-size: cover;
 }
-#services #album-fotos .front#foto-4 {
+#services #services-items .front#foto-4 {
   background: url("../assets/img/services/paisagismo.png") no-repeat;
   background-position: center;
   background-size: cover;
 }
-#services #album-fotos .front#foto-5 {
+#services #services-items .front#foto-5 {
   background: url("../assets/img/services/interiores.png") no-repeat;
   background-position: center;
   background-size: cover;
 }
-#services #album-fotos .front#foto-6 {
+#services #services-items .front#foto-6 {
   background: url("../assets/img/services/eas.jpg") no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-#services #album-fotos .flip {
+#services #services-items .flip {
   transform: rotateY(180deg);
 }
 .face {
@@ -351,7 +351,7 @@ section p {
   box-shadow: 0.188rem 0.188rem 0.188rem rgba(0, 0, 0, 0.4);
   background-size: cover;
 }
-#services #album-fotos .flip .show {
+#services #services-items .flip .show {
   z-index: 1;
 }
 .face.front {
@@ -382,7 +382,7 @@ section p {
   color: var(--text);
   font-size: 1rem;
 }
-#services #album-fotos .service {
+#services #services-items .service {
   width: 20.625rem;
   height: 20.625rem;
   position: relative;
@@ -406,7 +406,7 @@ section p {
   margin-bottom: 4rem;
 }
 
-figure.img {
+#about .about-img {
   padding: 0 0.938rem 1.875rem 1.875rem;
   position: relative;
   width: 100%;
@@ -619,7 +619,7 @@ figure.img {
 #aboutModal .modal-body {
   margin: 0;
   padding: 0;
-  background-color: var(--background);
+  background-color: var(--bg-secondary);
 }
 #aboutModal .header-about {
   padding-top: 4rem;
@@ -633,6 +633,8 @@ figure.img {
 }
 
 #aboutModal #valores {
+  margin: 0;
+  padding: 40px 0 0;
   background-color: var(--background);
 }
 #aboutModal #valores h2 {
@@ -643,31 +645,6 @@ figure.img {
   width: 5rem;
   height: 5rem;
   color: #fff;
-}
-#aboutModal .video-modal {
-  background-color: var(--bg-secondary);
-  margin: 0;
-}
-#aboutModal .video-modal .card {
-  height: 28.125rem;
-}
-#aboutModal .aboutBaviera {
-  background-color: var(--background);
-  margin-top: -6rem;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-
-  background-blend-mode: darken;
-}
-#aboutModal .aboutBaviera p {
-  font-size: 1.05rem;
-}
-#aboutModal .aboutBaviera img {
-  height: 100%;
-  width: 100%;
 }
 
 /* Formatacao de imagens e legendas*/

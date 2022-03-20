@@ -8,7 +8,7 @@
 /* LG ONLY (lg)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
   /*====== SERVICES ======*/
-  #services #album-fotos .service {
+  #services #services-items .service {
     width: 18.75rem;
     height: 18.75rem;
   }
@@ -19,7 +19,7 @@
   }
 }
 
-/* SM ONLY (lg)*/
+/* SM ONLY (sm)*/
 @media (max-width: 576px) {
   /*====== PROJECTS ======*/
   #projects .media-custom {
@@ -72,14 +72,21 @@
 
   /*SERVICES*/
 
-  #services #album-fotos .front span {
+  #services #services-items .front span {
     opacity: 1;
+  }
+  #services #services-items .service {
+    margin: 0 auto;
   }
 
   /* PROJECTS*/
   #projects .media-custom .card .card-body h4 {
     font-size: 1.125rem;
     padding: 0.5rem;
+  }
+
+  #projects .media-custom {
+    margin: 0 auto;
   }
 
   /*CONTACT*/
@@ -109,6 +116,11 @@
 
   .form-content {
     width: 100%;
+  }
+  /* ABOUT */
+
+  #about .about-img {
+    margin: o auto;
   }
 
   #aboutModal,
