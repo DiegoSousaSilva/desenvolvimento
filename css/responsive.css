@@ -117,4 +117,9 @@
     margin: 0;
     padding: 0;
   }
+
+  .about-body {
+    border-right: none;
+    padding-right: 0;
+  }
 }

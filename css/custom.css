@@ -670,17 +670,80 @@ figure.img {
   width: 100%;
 }
 
+/* Formatacao de imagens e legendas*/
+.photo-legend {
+  box-shadow: 1px 1px 4px white;
+  position: relative;
+  text-align: center;
+}
+.photo-legend img {
+  height: 100%;
+  width: 100%;
+}
+.photo-legend figcaption {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.photo-legend:hover figcaption {
+  opacity: 1;
+}
+.photo-legend h3,
+.photo-legend p {
+  text-align: center;
+}
+
+.about-body {
+  border-right: 1px solid var(--text-secondary);
+  padding-right: 15px;
+}
 /* Featurettes
 ------------------------- */
 
 .featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 1rem 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
-  /* rtl:remove */
   letter-spacing: -0.05rem;
+}
+
+.box {
+  width: 100%;
+  padding-top: 56%;
+  position: relative;
+}
+.box iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.about-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--text);
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.about-title span {
+  color: var(--primary);
+}
+
+.about-subtitle {
+  margin-top: -10;
+  color: var(--text-secondary);
+  font-size: 1rem;
 }
