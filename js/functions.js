@@ -41,12 +41,13 @@ $(".owl-carousel").owlCarousel({
   nav: false,
   slideBy: 2,
   autoplay: true,
+  responsiveClass: true,
   responsive: {
     0: {
       items: 1,
     },
     600: {
-      items: 2,
+      items: 1,
     },
     1000: {
       items: 2,
@@ -75,8 +76,9 @@ function typeWriter(e) {
 }
 
 const welcome = document.querySelector(".animation-welcome");
-
-typeWriter(welcome);
+setInterval(() => {
+  typeWriter(welcome);
+}, 12000);
 
 /* FLIPCARD SERVICES */
 function flipCard(id) {
