@@ -372,15 +372,17 @@ section p {
 }
 
 .face.back h2 {
+  font-weight: bold;
   text-align: center;
   color: var(--text);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 2rem;
 }
 .face.back li {
   list-style: inside;
   color: var(--text);
   font-size: 1rem;
+  line-height: 1.5rem;
 }
 #services #services-items .service {
   width: 20.625rem;
@@ -456,7 +458,7 @@ section p {
   background-position: center;
 }
 .marketing .img-clients.client1 {
-  background-image: url("../assets/img/clients/1.jpg");
+  background-image: url("../assets/Logo-SMF.jpeg");
 }
 .marketing .img-clients.client2 {
   background-image: url("../assets/img/clients/2.jpg");

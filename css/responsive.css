@@ -8,10 +8,10 @@
 /* LG ONLY (lg)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
   /*====== SERVICES ======*/
-  #services #services-items .service {
+  /*#services #services-items .service {
     width: 18.75rem;
     height: 18.75rem;
-  }
+  }*/
   /*====== PROJECTS ======*/
   #projects .media-custom {
     width: 425px;
