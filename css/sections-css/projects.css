@@ -1,0 +1,61 @@
+/*=== PROJECTS ===*/
+
+#projects .media-custom {
+  width: 500px;
+  height: 550px;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: 0.3s all ease;
+  margin-bottom: 30px;
+  position: relative;
+  top: 0;
+  box-shadow: 0.188rem 0.188rem 0.25rem rgba(0, 0, 0, 0.4);
+}
+#projects .media-custom .card {
+  border-radius: 0.625rem;
+  position: relative;
+  overflow: hidden;
+}
+
+#projects .media-custom img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s all ease;
+}
+#projects .media-custom .card .card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 0;
+  padding: 0.625rem;
+  color: #fff;
+}
+#projects .media-custom .card .card-body h4 {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+/* Animation Texts */
+#projects .owl-item.active .card .card-body h4 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInLeft;
+  animation-delay: 0.3s;
+}
+
+.media-custom:focus,
+.media-custom:hover {
+  top: -0.125rem;
+  box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.2);
+}
+.media-custom:focus img,
+.media-custom:hover img {
+  transform: scale(1.1);
+}
+.contain {
+  object-fit: contain;
+}

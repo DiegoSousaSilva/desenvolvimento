@@ -1,0 +1,124 @@
+/*=== Slider  ===*/
+.slider {
+  margin-top: -6.2rem;
+}
+
+.slider .item {
+  height: 32rem;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.slider .slide0 {
+  background-image: url("../../assets/img/slide/slider-incendio.jpg");
+}
+.slider .slide1 {
+  background-image: url("../../assets/img/slide/slider-residencial.png");
+}
+.slider .slide2 {
+  background-image: url("../../assets/img/slide/slider-interior-design.jpg");
+}
+.slider .slide3 {
+  background-image: url("../../assets/img/slide/slider-eas.jpg");
+}
+
+.slider .caption {
+  padding: 1.5rem;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  transform: translateY(-60%);
+}
+
+.slider .caption .title {
+  background: rgba(255, 255, 255, 0.4);
+  font-size: 3.75rem;
+  padding: 0.625rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.slider .caption .desc {
+  font-size: 2.188rem;
+  font-weight: 300;
+  margin: 1.25rem 0 0.625rem;
+  color: var(--text);
+}
+
+/* Animation Texts */
+.slider .owl-item.active .title {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-delay: 0.3s;
+}
+.slider .owl-item.active .desc {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+  animation-delay: 0.3s;
+}
+
+.slider .owl-dots {
+  position: absolute;
+  z-index: 100;
+  bottom: 3.125rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.slider .owl-dots button.owl-dot {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  border: 0.125rem solid var(--text);
+  margin: 0 0.188rem;
+  outline: none;
+}
+
+.slider .owl-dots button.owl-dot.active {
+  background: var(--text);
+}
+
+.slider .owl-carousel .owl-nav button.owl-prev,
+.slider .owl-carousel .owl-nav button.owl-next {
+  width: 1.875rem;
+  height: 1.875rem;
+  border-bottom: 0.25rem solid var(--text);
+  border-left: 0.25rem solid var(--text);
+  position: absolute;
+  text-indent: -3.75rem;
+
+  top: 50%;
+
+  overflow: hidden;
+  outline: none;
+  opacity: 0.5;
+  transition: all ease 0.5s;
+}
+
+.slider .owl-carousel .owl-nav button.owl-prev {
+  left: 10px;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.slider .owl-carousel .owl-nav button.owl-next {
+  right: 0.625rem;
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+.slider .owl-carousel:hover .owl-nav button.owl-prev {
+  left: 1.875rem;
+}
+.slider .owl-carousel:hover .owl-nav button.owl-next {
+  right: 1.875rem;
+}

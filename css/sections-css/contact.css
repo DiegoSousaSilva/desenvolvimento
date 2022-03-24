@@ -1,0 +1,36 @@
+/*=== CONTACT ===*/
+
+#contact {
+  background: rgba(0, 0, 0, 0.7);
+  background-image: url("../../assets/img/about.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+}
+
+#contact .row {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#contact p {
+  font-size: 1.375rem;
+  margin-bottom: 1.25rem;
+  line-height: 2.5rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+}
+
+/*=== MODAL FORM ===*/
+#info-msg {
+  padding: 0.625rem;
+  width: 100%;
+  color: #fff;
+}
