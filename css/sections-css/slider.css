@@ -13,16 +13,13 @@
 }
 
 .slider .slide0 {
-  background-image: url("../../assets/img/slide/slider-incendio.jpg");
+  background-image: url("../../assets/img/slide/slider-incendio.webp");
 }
 .slider .slide1 {
-  background-image: url("../../assets/img/slide/slider-residencial.png");
+  background-image: url("../../assets/img/slide/slider-residencial.webp");
 }
 .slider .slide2 {
-  background-image: url("../../assets/img/slide/slider-interior-design.jpg");
-}
-.slider .slide3 {
-  background-image: url("../../assets/img/slide/slider-eas.jpg");
+  background-image: url("../../assets/img/slide/slider-interior-design.webp");
 }
 
 .slider .caption {

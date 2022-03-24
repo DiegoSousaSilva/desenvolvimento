@@ -27,32 +27,23 @@
 }
 
 #services #services-items .front#foto-1 {
-  background: url("../../assets/img/services/protect-incendio.jpg") no-repeat;
+  background: url("../../assets/img/services/protect-incendio.webp") no-repeat;
   background-position: center;
   background-size: cover;
 }
 #services #services-items .front#foto-2 {
-  background: url("../../assets/img/services/residencial.png") no-repeat;
+  background: url("../../assets/img/services/residencial.webp") no-repeat;
   background-position: center;
   background-size: cover;
 }
+
 #services #services-items .front#foto-3 {
-  background: url("../../assets/img/services/condominios.jpg") no-repeat;
+  background: url("../../assets/img/services/paisagismo.webp") no-repeat;
   background-position: center;
   background-size: cover;
 }
 #services #services-items .front#foto-4 {
-  background: url("../../assets/img/services/paisagismo.png") no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-#services #services-items .front#foto-5 {
-  background: url("../../assets/img/services/interiores.png") no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-#services #services-items .front#foto-6 {
-  background: url("../../assets/img/services/eas.jpg") no-repeat;
+  background: url("../../assets/img/services/interiores.webp") no-repeat;
   background-position: center;
   background-size: cover;
 }
